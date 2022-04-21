@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Figuras geometricas | Curso Practico de Javascript</title>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
+    <div class="navbar">
+        <img src="./colorful-3d-cubes-logo-by-Vexels.png" alt="">
+        <h1 class="title">Figuras Geometricas</h1>
+    </div>
+    <div class="mainContainer">
+        <header class="encabezado">
+            <h2>Este es el primer taller del curso Practico de Javascript</h2>
+            <p>Confiable y diseñado para su uso diario.</p>
+        </header>
+        <section class="cuadradocirculo">
+            <div class="cuadrado">
+                <img src="./pngwing.com.png" alt="">
+                <h3>Cuadrado</h3>
+                <p>Escribe cuando mide cada lado de tu cuadrado</p>
+                <form action="">
+                    <label for="ladoC">Lado del cuadrado</label>
+                    <input type="number" name="ladoC" id="ladoC">
+                    <button id="perimetroC" type="button" onclick="calcularPerimetroCuadrado()">Clacular Perimetro</button>
+                    <button id="areaC" type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+                </form>
+            </div>
+            <div class="circulo">
+                <img src="./pngwing.com (1).png" alt="">
+                <h3>Circulo</h3>
+                <p>Escribe cuando mide el radio de tu circulo</p>
+                <form action="">
+                    <label for="radioC">Radio del circulo</label>
+                    <input type="number" name="radioC" id="radioC">
+                    <button id="perimetroCi" type="button" onclick="calcularPerimetroCirculo()">Clacular Perimetro</button>
+                    <button id="areaCi" type="button" onclick="calcularAreaCirculo()">Calcular Area</button>
+                </form>
+            </div>
+        </section>
+        <section class="triangulo">
+            <img src="./pngwing.com (2).png" alt="">
+            <h3>Triangulo</h3>
+            <p>Escribe cuando mide cada lado de tu triangulo</p>
+            <form action="">
+                <label for="ladoT1">Lado 1 del triangulo</label>
+                <input type="number" name="ladoT1" id="ladoT1">
+                <label for="ladoT2">Lado 2 del triangulo</label>
+                <input type="number" name="ladoT2" id="ladoT2">
+                <label for="baseT">Base del triangulo</label>
+                <input type="number" name="baseT" id="baseT">
+                <button id="perimetroT" type="button" onclick="calcularPerimetroTriangulo()">Clacular Perimetro</button>
+                <button id="areaT" type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+            </form>
+        </section>
+    </div>
     <script src="./figurasF.js"></script>
 </body>
 </html>
