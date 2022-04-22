@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cupones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Cupones y Descuentos</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="title">Cupones y Descuentos</h1>
+    </header>
+    <section class="mainContainer">
+        <div class="content">
+            <div id="imgContent">
+                <img src="./img/reloj.jpg" alt="articulo" class="imgProduct">
+            </div>
+            <form class="formulario" id="fomr">
+                <label for="article" class="label" id="label1">Articulo</label>
+                <select name="article" class="list" id="article">
+                    <option value="0">Reloj</option>
+                    <option value="1">Parlante</option>
+                    <option value="2">Mouse</option>
+                    <option value="3">Labial</option>
+                </select>
+                <label for="priceInput" class="label" id="label2">Precio</label>
+                <p id="priceInput" class="price"></p>
+                <label for="cupon" class="label" id="label3">Cupon</label>
+                <select name="cupon" class="list" id="cupon">
+                    <option value="0">10% Descuento</option>
+                    <option value="1">15% Descuento</option>
+                    <option value="2">20% Descuento</option>
+                    <option value="3">25% Descuento</option>
+                </select>
+                <p id="total">
+                    Hola, aqui va el descuento <br>
+                    y el precio final
+                </p>
+                <button type="button" onclick="calcularCupon()">Calcular</button>
+            </form>
+
+        </div>
+    </section>
+    <script src="./js/cupones.js"></script>
+</body>
+</html>
