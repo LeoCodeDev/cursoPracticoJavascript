@@ -28,7 +28,6 @@ function sumarValores(){
             elemento2,
             promedio,
         });
-
     }else{
         const mitadArray = valores.length / 2;
         promedio = valores[parseInt(mitadArray)];

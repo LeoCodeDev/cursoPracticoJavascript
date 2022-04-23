@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/moda.css">
+    <title>Moda</title>
+</head>
+<body>
+    <header>
+        <h1>Promedios, Medias y Medianas</h1>
+    </header>
+    <form>
+        <label for="valor">Valor</label>
+        <input type="number" name="valor" id="valor">
+        <button type="button" onclick="incluirValor()">Incluir</button>
+        <label for="Valores">Valores</label>
+        <p id="mostrarValor">Aqui iran los valores</p>
+        <button type="button" onclick="calcularModa()">Calcular Moda</button>
+        <p id="conjuntoOrdenado">Aqui iran los conjuntos de valores ordenados</p>
+        <p id="moda">Aqui ira la moda</p>
+        <button type="reset">Reset</button>
+    </form>
+    <script src="./js/moda.js"></script>
+</body>
+</html>
