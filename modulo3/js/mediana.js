@@ -22,12 +22,6 @@ function sumarValores(){
         let elemento2 = parseInt(valores[mitadArray]);
 
         promedio = ((elemento1 + elemento2) / 2);
-        console.log({
-            mitadArray,
-            elemento1,
-            elemento2,
-            promedio,
-        });
     }else{
         const mitadArray = valores.length / 2;
         promedio = valores[parseInt(mitadArray)];
