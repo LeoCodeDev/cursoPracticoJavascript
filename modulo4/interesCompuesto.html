@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/interesCompuesto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Interes Compuesto</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Interes Compuesto</h1>
+        <p>Calcula el interes compuesto de tus inversiones</p>
+    </header>
+    <section class="mainSection">
+        <article class="container">
+            <div class="wraper">
+                <h3>Calculadora</h3>
+                <form class="form" id="formCompuesto">
+                    <label for="monto">Monto de Inversion</label>
+                    <input type="number" name="monto" id="monto" class="inputForm">
+                    <label for="percentil">Porcentaje</label>
+                    <input type="number" name="percentil" id="percentil" class="inputForm">
+                    <label for="time">Meses a invertir</label>
+                    <input type="number" name="number" id="number" class="inputForm">
+                    <button type="button" class="button" onclick="calcular()">Calcular</button>
+                </form>
+            </div>
+            <p id="result" class="result">Aqui iran los resultados</p>
+        </article>
+        <aside class="lateral">
+            <p>
+                El interes compuesto es cuando el porcentaje profit generado
+                es reinvertido nuevamente junto con el capital, para asi tener
+                un crecimiento de capital mas agresivo.
+            </p>
+        </aside>
+    </section>
+    <script src="./js/interesCompuesto.js"></script>
+</body>
+</html>
