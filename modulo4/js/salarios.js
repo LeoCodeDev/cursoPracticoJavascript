@@ -1,5 +1,8 @@
 const salarios = [];
 let onlySalary = [];
+let percent10 = Calcular10(onlySalary.length, 10);
+let SalaryTop10 = onlySalary.splice(0,percent10);
+const mediaGeneral = sumarValores();
 
 function capturarSalarios(){
     const nombre = document.getElementById('name');
@@ -37,5 +40,12 @@ function sumarValores(){
         promedio = onlySalary[parseInt(mitadArray)];
     }
 
-    return /* document.getElementById('mediana').innerText = 'La mediana es: ' + */ promedio;
+    return promedio;
+}
+
+function Calcular10(cantidad, top){
+    const restante = 100 - parseInt(top);
+    const cantidadFinal = ( parseInt(cantidad) * restante) / 100 ;
+
+    return cantidadFinal;
 }
