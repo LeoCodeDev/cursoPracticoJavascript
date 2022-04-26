@@ -1,6 +1,6 @@
 # cursoPracticoJavascript
-Primer Curso practico de javascript en platzi
-Vista desplegada del curso completo en => https://code-from-scratch1.github.io/cursoPracticoJavascript/
+- Primer Curso practico de javascript en platzi
+- Vista desplegada del curso completo en => https://code-from-scratch1.github.io/cursoPracticoJavascript/
 ...
 ...
 
